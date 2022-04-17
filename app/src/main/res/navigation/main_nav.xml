@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.unero.sceneviewdemo.view.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_arModelViewerFragment"
+            app:destination="@id/arModelViewerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_arCursorFragment"
+            app:destination="@id/arCursorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/arModelViewerFragment"
+        android:name="com.unero.sceneviewdemo.view.scene.ArModelViewerFragment"
+        android:label="fragment_ar_model_viewer"
+        tools:layout="@layout/fragment_ar_model_viewer" />
+    <fragment
+        android:id="@+id/arCursorFragment"
+        android:name="com.unero.sceneviewdemo.view.scene.ArCursorFragment"
+        android:label="fragment_ar_cursor"
+        tools:layout="@layout/fragment_ar_cursor" />
+</navigation>
