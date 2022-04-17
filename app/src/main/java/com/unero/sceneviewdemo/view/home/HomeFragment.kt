@@ -31,7 +31,7 @@ class HomeFragment : Fragment() {
             btnArViewer.setOnClickListener { setDestination(0) }
             btnArCursor.setOnClickListener { setDestination(1) }
             btnArAnchor.setOnClickListener { showNotImplemented() }
-            btnViewer.setOnClickListener { showNotImplemented() }
+            btnViewer.setOnClickListener { setDestination(2) }
         }
     }
 
@@ -42,6 +42,9 @@ class HomeFragment : Fragment() {
             }
             1 -> {
                 HomeFragmentDirections.actionHomeFragmentToArCursorFragment()
+            }
+            2 -> {
+                HomeFragmentDirections.actionHomeFragmentToModelViewerFragment()
             }
             else -> {
                 HomeFragmentDirections.actionHomeFragmentToArModelViewerFragment()

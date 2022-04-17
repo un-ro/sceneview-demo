@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_homeFragment_to_arCursorFragment"
             app:destination="@id/arCursorFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_modelViewerFragment"
+            app:destination="@id/modelViewerFragment" />
     </fragment>
     <fragment
         android:id="@+id/arModelViewerFragment"
@@ -27,4 +30,9 @@
         android:name="com.unero.sceneviewdemo.view.scene.ArCursorFragment"
         android:label="fragment_ar_cursor"
         tools:layout="@layout/fragment_ar_cursor" />
+    <fragment
+        android:id="@+id/modelViewerFragment"
+        android:name="com.unero.sceneviewdemo.view.scene.ModelViewerFragment"
+        android:label="fragment_model_viewer"
+        tools:layout="@layout/fragment_model_viewer" />
 </navigation>
